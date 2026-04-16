@@ -51,7 +51,7 @@ Benvenuti nel mio laboratorio di ***Computer Vision***. Questo repository rappre
 <img src="https://img.shields.io/badge/Performance-High%20Throughput-blue">
 <img src="https://img.shields.io/badge/Architecture-RTX%2030%20%7C%2040%20Series-success">
 
->[!INFO]
+>[!WARNING]
    > Sistema ottimizzato per hardware di fascia alta, capace di massimizzare il throughput dei tensori sfruttando la VRAM (fino a 10× rispetto alla CPU), riducendo i tempi di training e migliorando la reattività in inferenza. Testato con successo su GPU NVIDIA serie 30 e 40, garantendo versatilità e prestazioni stabili su più generazioni.
 
 ![Deep Learning GPU Stack](assets/img/gpu_stack.png)
@@ -170,7 +170,7 @@ Il processo di creazione e validazione di ogni modello segue rigorosamente una p
 > Sotto un esempio di inferenza a bassa latenza con generazione dinamica di heatmap.
  </mark>
 
-![MNIST Demo](assets/img/MNIST/demo.png)
+![MNIST Demo](assets/img/MNIST/demo3.png)
 ![Inference Demo](assets/img/MNIST/3.gif)
 ><mark>
 > Inference Demo:
@@ -202,7 +202,7 @@ Sfida di riconoscimento su 10 classi (RGB 32x32), potenziata da tecniche di **In
 
 ![Grad-CAM_demo](assets/img/CIFAR10/Grad-CAM_demo.png)
 
-> [!INFO]
+> [!TIP]
    >*Analisi Grad-CAM: Il modello distingue tra Auto e Camion analizzando feature specifiche.*
 
 ---
