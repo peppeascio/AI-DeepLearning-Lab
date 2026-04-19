@@ -32,7 +32,7 @@ Benvenuti nel mio laboratorio di ***Computer Vision***. Questo repository rappre
 
 > _Riferimento progettuale:_
 > <img src="https://img.shields.io/badge/Scope-MNIST%20%7C%20CIFAR10%20Experiments-orange">
-![Esempio](assets/img/General/old/es_generale.png)
+![Esempio](assets\img\General\comprehensive_analysis.png)
 
 ---
 
@@ -90,7 +90,7 @@ AI-DeepLearning-Lab/
 ---
 ## Guida all'Installazione
 
-Segui questi passaggi per configurare l'ambiente virtuale Python e installare tutte le dipendenze necessarie per eseguire i modelli e sfruttare l'accelerazione della tua GPU.
+Segui questi passaggi per configurare l'ambiente virtuale Python e installare tutte le dipendenze necessarie per eseguire i modelli e sfruttare l'accelerazione della GPU.
 
 **1. Prerequisiti Hardware & Software**
 
@@ -181,7 +181,7 @@ Il processo di creazione e validazione di ogni modello segue rigorosamente una p
 
 ### 2. CIFAR-10: Elite Object Recognition
 **Structure Project**
-> 📂 [**02-CIFAR10-Classifier/**](./02-CIFAR10-Classifier) - Modulo 2: Classificazione Oggetti (RGB)<br>├── 📁 [data/](./02-CIFAR10-Classifier/data) - Dataset CIFAR-10<br>├── 📁 [models/](./02-CIFAR10-Classifier/models) - Pesi addestrati (.pt)<br>├── 📁 [notebook/](./02-CIFAR10-Classifier/notebook) - Jupyter Notebook di analisi<br>│   └── 📓 [CIFAR-10.ipynb](./02-CIFAR10-Classifier/notebook/CIFAR-10.ipynb) - Benchmark e Test<br>├── 📁 [output/](./02-CIFAR10-Classifier/output) - Log e storico predizioni<br>│   ├── 📁 [logs/](./02-CIFAR10-Classifier/output/logs) - CSV con storico predizioni<br>│   └── 📁 [predictions/](./02-CIFAR10-Classifier/output/predictions) - Metriche di run<br>├── 📁 [src/](./02-CIFAR10-Classifier/src) - Codice sorgente (Training & Inferenza)<br>│   ├── 🐍 [config.py](./02-CIFAR10-Classifier/src/config.py) - File configurazione parametri<br>│   ├── 🐍 [train.py](./02-CIFAR10-Classifier/src/train.py) - Script di addestramento primario<br>│   ├── 🐍 [predict_plot.py](./02-CIFAR10-Classifier/src/predict_plot.py) - Inferenza visiva<br>│   └── 🐍 [predict_terminal.py](./02-CIFAR10-Classifier/src/predict_terminal.py) - Inferenza rapida<br>├── 📁 [test/](./02-CIFAR10-Classifier/test) - Immagini fotografiche per inferenza<br>└── 📄 [requirements.txt](./02-CIFAR10-Classifier/requirements.txt) - Dipendenze modulo<br>
+> 📂 [**02-CIFAR10-Classifier/**](./02-CIFAR10-Classifier) - Modulo 2: Classificazione Oggetti (RGB)<br>├── 📁 [data/](./02-CIFAR10-Classifier/data) - Dataset CIFAR-10<br>├── 📁 [models/](./02-CIFAR10-Classifier/models) - Pesi addestrati (.pt)<br>├── 📁 [notebook/](./02-CIFAR10-Classifier/notebook) - Jupyter Notebook di analisi<br>│   └── 📓 [CIFAR-10.ipynb](./02-CIFAR10-Classifier/notebook/CIFAR-10.ipynb) - Benchmark e Test<br>├── 📁 [output/](./02-CIFAR10-Classifier/output) - Log e storico predizioni<br>│   ├── 📁 [logs/](./02-CIFAR10-Classifier/output/logs) - CSV con storico predizioni<br>│   └── 📁 [predictions/](./02-CIFAR10-Classifier/output/predictions) - Metriche di run<br>├── 📁 [src/](./02-CIFAR10-Classifier/src) - Codice sorgente (Training & Inferenza)<br>│   ├── [config.py](./02-CIFAR10-Classifier/src/config.py) - File configurazione parametri<br>│   ├──  [train.py](./02-CIFAR10-Classifier/src/train.py) - Script di addestramento primario<br>│   ├──  [predict_plot.py](./02-CIFAR10-Classifier/src/predict_plot.py) - Inferenza visiva<br>│   └──  [predict_terminal.py](./02-CIFAR10-Classifier/src/predict_terminal.py) - Inferenza rapida<br>├── 📁 [test/](./02-CIFAR10-Classifier/test) - Immagini fotografiche per inferenza<br>└── 📄 [requirements.txt](./02-CIFAR10-Classifier/requirements.txt) - Dipendenze modulo<br>
 <br><br>
 
 Sfida di riconoscimento su 10 classi (RGB 32x32), potenziata da tecniche di **Interpretability**.
