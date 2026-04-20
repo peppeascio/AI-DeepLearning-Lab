@@ -32,7 +32,7 @@ Benvenuti nel mio laboratorio di ***Computer Vision***. Questo repository rappre
 
 > _Riferimento progettuale:_
 > <img src="https://img.shields.io/badge/Scope-MNIST%20%7C%20CIFAR10%20Experiments-orange">
-![Esempio](assets\img\General\comprehensive_analysis.png)
+![Esempio Analysis](assets\img\General\comprehensive_analysis.png)
 
 ---
 
@@ -164,7 +164,7 @@ Il processo di creazione e validazione di ogni modello segue rigorosamente una p
 
 ***Hyperparameter Testing***: Il sistema testa sequenzialmente diversi Learning Rates (es. 0.01, 0.001, 0.0001) per trovare il setup ideale.
 
-***Dual Visualization***: Matplotlib: Generazione automatica di un grafico comparativo [comparison_results.png](./01-MNIST-Digits/output/comparison_results.png) per una consultazione rapida senza dipendenze esterne.
+***Dual Visualization***: Matplotlib: Generazione automatica di un grafico comparativo [comparison_results.png](01-MNIST-Digits\output\comparison_results.png) per una consultazione rapida senza dipendenze esterne.
 
 ><mark>
 > Sotto un esempio di inferenza a bassa latenza con generazione dinamica di heatmap.

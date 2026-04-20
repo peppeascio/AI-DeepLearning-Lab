@@ -29,8 +29,6 @@ ai_gpu/
 # =========================
 # Ignora TUTTO il contenuto dentro le cartelle data, ma non la cartella in sé
 **/data/*
-
-# Fai un'eccezione per il file .gitkeep
 !**/data/.gitkeep
 
 # =========================
@@ -38,8 +36,6 @@ ai_gpu/
 # =========================
 **/models/*
 !**/models/.gitkeep
-
-# estensioni modelli (extra sicurezza ovunque si trovino)
 *.pt
 *.pth
 *.onnx
@@ -49,10 +45,13 @@ ai_gpu/
 # =========================
 # 🔹 OUTPUT / TRAINING
 # =========================
-**/output/*
-!**/output/.gitkeep
-**/runs/
-**/logs/
+# Permettiamo la cartella outputs e tutto il suo contenuto
+# (Grafici, dashboard XAI e log delle performance)
+**/outputs/*
+!**/outputs/.gitkeep
+# Rimuovi o commenta la riga **/logs/ se vuoi caricare i log in outputs/logs/
+#! **/logs/  <-- ELIMINATA PER MOSTRARE I RISULTATI
+
 
 # =========================
 # 🔹 FILE TEMPORANEI
