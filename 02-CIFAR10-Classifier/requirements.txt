@@ -1,21 +1,17 @@
---- CORE AI STACK ---
-
+# --- CORE AI STACK ---
 torch>=2.0.0
 torchvision>=0.15.0
 numpy>=1.24.0
 
---- XAI & IMAGE PROCESSING (Specifico per CIFAR10) ---
+# --- XAI & IMAGE PROCESSING (Specifico per CIFAR10) ---
+opencv-python>=4.7.0      # Per Grad-CAM e manipolazione heatmap spaziali
+pandas>=2.0.0             # Per il Persistent Logging (CSV) dei trend di training
+scikit-learn>=1.2.0       # Per Confusion Matrix e F1-Score (Analisi errori)
 
-opencv-python>=4.7.0      # Necessario per Grad-CAM e manipolazione heatmap
-pandas>=2.0.0             # Per la gestione del Persistent Logging in formato CSV
-scikit-learn>=1.2.0       # Per metriche avanzate (Confusion Matrix, F1-Score)
-
---- VISUALIZATION & GUI ---
-
+# --- VISUALIZATION & GUI ---
 matplotlib>=3.7.0
-Pillow>=9.5.0             # 
+Pillow>=9.5.0             # Manipolazione file immagine reali (JPG/PNG)
 
---- TELEMETRY & TOOLS ---
-
+# --- TELEMETRY & TOOLS ---
 tqdm>=4.65.0
 tensorboard>=2.12.0
