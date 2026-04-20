@@ -1,21 +1,30 @@
 # AI Deep Learning Lab 
 
 <p align="center">
+  <a href="https://www.python.org/">
+    <img src="https://img.shields.io/badge/python-3.10+-blue.svg?style=for-the-badge&logo=python&logoColor=white" />
+  </a>
+  <a href="https://pytorch.org/">
+    <img src="https://img.shields.io/badge/PyTorch-2.x-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
+  </a>
+  <a href="https://developer.nvidia.com/cuda-zone">
+    <img src="https://img.shields.io/badge/CUDA-RTX%203070-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
+  </a>
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" />
+  </a>
+</p>
 
-<img src="https://img.shields.io/badge/Python-3.11-blue?logo=python">
-<img src="https://img.shields.io/badge/ML-Deep%20Learning-orange">
-<img src="https://img.shields.io/badge/Framework-PyTorch-red">
-
-
----
+- --
 
 </p>
 
 ![Lab Banner](assets/img/Banner/banner_lab.png)
 
-
 <p align="center">
-  <img src="https://img.shields.io/badge/Spiccillo-Creator-black?style=circle" />
+  <a href="https://github.com/spiccillodev">
+    <img src="https://img.shields.io/badge/SPICCILLO-CREATOR-black?style=for-the-badge&logo=github&logoColor=white" alt="Spiccillo Creator" />
+  </a>
 </p>
 
 ---
@@ -27,10 +36,11 @@ Benvenuti nel mio laboratorio di ***Computer Vision***. Questo repository rappre
 >[!TIP]
    > I benchmark dettagliati e i test sono disponibili nei Jupyter Notebook all'interno di ogni modulo.
 
-> _Esempio:_  ![Model](https://img.shields.io/badge/Model-CNN%20Deep%20Learning-purple)
+> _Esempio:_  
+> ![Model](https://img.shields.io/badge/Model-CNN%20Deep%20Learning-purple)
 ![General Overview](assets/img/General/convolutional_neural_network.png)
 
-> _Riferimento progettuale:_
+> _Riferimento progettuale:_ 
 > <img src="https://img.shields.io/badge/Scope-MNIST%20%7C%20CIFAR10%20Experiments-orange">
 ![Esempio Analysis](assets/img/General/comprehensive_analysis.png)
 
@@ -79,13 +89,13 @@ AI-DeepLearning-Lab/
 
 ###### Moduli principali
 - [MNIST Digits](./01-MNIST-Digits)
-  <img src="https://img.shields.io/badge/Module-01%20MNIST%20Digits-blue">
+  ![MNIST Module](https://img.shields.io/badge/Module_01-MNIST_Digits-blue?style=for-the-badge&logo=pytorch&logoColor=white)
 
 - [CIFAR10 Classifier](./02-CIFAR10-Classifier) 
-   <img src="https://img.shields.io/badge/Module-02%20CIFAR10%20Classifier-orange">
+   ![Module_02-CIFAR10](https://img.shields.io/badge/Module_02-CIFAR10_Classifier-orange?style=for-the-badge&logo=googlephotos&logoColor=white)
 
 - [assets](./assets) (Risorse grafiche per documentazione) 
-  <img src="https://img.shields.io/badge/Assets-Visualization%20%7C%20Data-lightgrey">
+  ![Assets](https://img.shields.io/badge/Assets-Visualization_%7C_Data-lightgrey?style=for-the-badge&logo=files&logoColor=white)
 
 ---
 ## Guida all'Installazione
@@ -126,19 +136,19 @@ python -c "import torch; print(f'GPU Disponibile: {torch.cuda.is_available()} - 
 
 Il processo di creazione e validazione di ogni modello segue rigorosamente una pipeline standardizzata:
 
-1. **Tensor Analysis:** Calibrazione delle dimensioni Input/Output, normalizzazione e strategie di stochastic data augmentation.
+1. **Tensor Analysis:** Calibrazione delle dimensioni Input/outputs, normalizzazione e strategie di stochastic data augmentation.
 2. **Model Architecture Design:** Progettazione di architetture CNN personalizzate, con attenzione alla profondità, al numero di filtri e alla scelta delle funzioni di attivazione (ReLU, Softmax).
 3. **Loss Function & Optimization:** Implementazione di funzioni di perdita appropriate (Cross-Entropy) e ottimizzazione tramite algoritmi avanzati (Adam, SGD con Momentum).
 4. **Data Loading & Preprocessing:** Utilizzo di DataLoader con batch size ottimizzati e tecniche di shuffling per garantire una distribuzione equilibrata dei dati durante il training.
 5. **Validation & Testing:** Valutazione continua delle performance su set di validazione, con metriche chiave come Accuracy, Precision, Recall e F1-Score per monitorare la generalizzazione del modello.
 6. **Hyperparameter Tuning:** Sperimentazione sistematica di learning rates, batch sizes e architetture per identificare la configurazione ottimale.
-7. **Iterative Training:** Monitoraggio della convergenza tramite **TensorBoard**, utilizzando tracker di progresso <kbd>tqdm</kbd> e l'ottimizzatore *Adam*.
+7. **Iterative Training:** Monitoraggio della convergenza tramite **TensorBoard**, utilizzando il tracker di progresso [<kbd>tqdm</kbd>](https://github.com/tqdm/tqdm) e l'ottimizzatore *Adam*.
 
 8. **Brain Scanning:** Estrazione e visualizzazione delle mappe di attivazione per verificare  cosa i filtri convoluzionali stiano "percependo" a diverse profondità *(feature extraction)*.
 9.  **Persistent Logging:** Registrazione storica di ogni predizione, punteggio di confidenza ed errore in formato CSV per analisi post-training.
-10. **Model Export:** Conversione in formato <img src="https://img.shields.io/badge/ONNX-Neural%20Network%20Exchange-blue">  per la visualizzazione universale del grafo e il deployment.
+10. **Model Export:** Conversione in formato [![ONNX](https://img.shields.io/badge/ONNX-Neural%20Network%20Exchange-blue?style=flat-square&logo=onnx&logoColor=white)](https://onnx.ai/) per la visualizzazione universale del grafo e il deployment.
 
->*Esempio di monitoraggio della convergenza (Loss e Accuracy) via TensorBoard.*
+><mark>*Esempio di monitoraggio della convergenza (Loss e Accuracy) via TensorBoard.*</mark>
 ![Tensorboard curves](assets/img/General/Tensorboard_curves.png)
 
 ---
@@ -147,8 +157,31 @@ Il processo di creazione e validazione di ogni modello segue rigorosamente una p
 #### 🔢 1. MNIST: Handwritten Digit Recognition
 ##### Structure Project
 
->📂 [***01-MNIST-Digits/***](./01-MNIST-Digits) - Modulo 1: Classificazione Cifre (0-9)<br>│
-├── 📁 [data/](./01-MNIST-Digits/data) - Dataset raw e processati<br>├── 📁 [models/](./01-MNIST-Digits/models) - Pesi addestrati (.pt)<br>├── 📁 [notebook/](./01-MNIST-Digits/notebook) - Jupyter Notebook con benchmark e test<br>│                   └── [01_MNIST_Digits.ipynb](./01-MNIST-Digits/notebook/01_MNIST_Digits.ipynb) - Jupyter Notebook <br>├── 📁 [output/](./01-MNIST-Digits/output) - Log di telemetria e risultati<br>│   ├── 📁 [LR_0.001_BS_256/](./01-MNIST-Digits/output/LR_0.001_BS_256) - Output tuning parametri<br>│   └── [comparison_results.png](./01-MNIST-Digits/output/comparison_results.png) - Grafico comparativo<br>├── 📁 [src/](./01-MNIST-Digits/src) - Codice sorgente principale<br>│   ├── 📁 [netron_visualization/](./01-MNIST-Digits/src/netron_visualization) - Export ONNX<br>│   ├──  [mnist_ai.py](./01-MNIST-Digits/src/mnist_ai.py) - Script di training<br>│   ├──  [predict_mnist_heatmap.py](./01-MNIST-Digits/src/predict_mnist_heatmap.py) - Inferenza con Heatmap<br>│   └── [predict_mnist_terminal.py](./01-MNIST-Digits/src/predict_mnist_terminal.py) - Inferenza da terminale<br>├── 📁 [test/](./01-MNIST-Digits/test) - Immagini custom per inferenza manuale<br>└── 📄 [requirements.txt](./01-MNIST-Digits/requirements.txt) - Dipendenze specifiche<br>
+>📂 01-MNIST-Digits/
+├── 📁 [data/](./01-MNIST-Digits/data) - Dataset MNIST (auto-download)
+│   └── [.gitkeep](./01-MNIST-Digits/data/.gitkeep)
+├── 📁 [models/](./01-MNIST-Digits/models) - Pesi del modello salvati
+│   ├── [.gitkeep](./01-MNIST-Digits/models/.gitkeep)
+│   └── [mnist_classifier_v1.pt](./01-MNIST-Digits/models/mnist_classifier_v1.pt)
+├── 📁 [netron_visualization/](./01-MNIST-Digits/netron_visualization) - Architettura universale
+│   ├── 🌐 [mnist_model_graph.onnx](./01-MNIST-Digits/netron_visualization/mnist_model_graph.onnx)
+│   └── 📄 [mnist_model_graph.onnx.data](./01-MNIST-Digits/netron_visualization/mnist_model_graph.onnx.data)
+├── 📁 [notebook/](./01-MNIST-Digits/notebook) - Sperimentazione interattiva
+│   └── [01_MNIST_Digits.ipynb](./01-MNIST-Digits/notebook/01_MNIST_Digits.ipynb)
+├── 📁 [outputss/](./01-MNIST-Digits/outputss) - Risultati del training e grafici
+│   ├── 📁 [LR_0.01_BS_256/](./01-MNIST-Digits/outputss/LR_0.01_BS_256) - Log iperparametri
+│   ├── 📁 [LR_0.001_BS_256/](./01-MNIST-Digits/outputss/LR_0.001_BS_256) - Log iperparametri
+│   ├── 📁 [LR_0.0001_BS_256/](./01-MNIST-Digits/outputss/LR_0.0001_BS_256) - Log iperparametri
+│   └── [comparison_results.png](./01-MNIST-Digits/outputss/comparison_results.png)
+├── 📁 [src/](./01-MNIST-Digits/src) - Codice sorgente principale
+│   ├── ⚙️ [config.py](./01-MNIST-Digits/src/config.py) - Impostazioni centralizzate
+│   ├── [export_to_netron.py](./01-MNIST-Digits/src/export_to_netron.py) - Converter ONNX
+│   ├── [inspect_model.py](./01-MNIST-Digits/src/inspect_model.py) - Analisi dei tensori
+│   ├── [mnist_ai.py](./01-MNIST-Digits/src/mnist_ai.py) - Core training script
+│   └── [predict_mnist_heatmap.py](./01-MNIST-Digits/src/predict_mnist_heatmap.py) - Inferenza visiva
+├── 📁 [test/](./01-MNIST-Digits/test) - Immagini per test manuali
+│   └── [5.png](./01-MNIST-Digits/test/5.png)
+└── 📄 [requirements.txt](./01-MNIST-Digits/requirements.txt) - Dipendenze del modulo
 
 
 - **Dataset:** 60.000 immagini di training e 10.000 di test, dimensioni 28x28 pixel in scala di grigi.
@@ -160,11 +193,11 @@ Il processo di creazione e validazione di ogni modello segue rigorosamente una p
 <br><br>
 #### Caratteristiche Principali:
 
-***Auto-Cleanup***: La cartella [output](./01-MNIST-Digits/output) viene ottimizzata automaticamente a ogni avvio per evitare accumuli di spazio.
+***Auto-Cleanup***: La cartella [outputss](./01-MNIST-Digits/outputss) viene ottimizzata automaticamente a ogni avvio per evitare accumuli di spazio.
 
 ***Hyperparameter Testing***: Il sistema testa sequenzialmente diversi Learning Rates (es. 0.01, 0.001, 0.0001) per trovare il setup ideale.
 
-***Dual Visualization***: Matplotlib: Generazione automatica di un grafico comparativo [comparison_results.png](01-MNIST-Digits\output\comparison_results.png) per una consultazione rapida senza dipendenze esterne.
+***Dual Visualization***: Matplotlib: Generazione automatica di un grafico comparativo [comparison_results.png](./01-MNIST-Digits/outputss/comparison_results.png) per una consultazione rapida senza dipendenze esterne.
 
 ><mark>
 > Sotto un esempio di inferenza a bassa latenza con generazione dinamica di heatmap.
@@ -181,8 +214,28 @@ Il processo di creazione e validazione di ogni modello segue rigorosamente una p
 
 ### 2. CIFAR-10: Elite Object Recognition
 **Structure Project**
-> 📂 [**02-CIFAR10-Classifier/**](./02-CIFAR10-Classifier) - Modulo 2: Classificazione Oggetti (RGB)<br>├── 📁 [data/](./02-CIFAR10-Classifier/data) - Dataset CIFAR-10<br>├── 📁 [models/](./02-CIFAR10-Classifier/models) - Pesi addestrati (.pt)<br>├── 📁 [notebook/](./02-CIFAR10-Classifier/notebook) - Jupyter Notebook di analisi<br>│   └── 📓 [CIFAR-10.ipynb](./02-CIFAR10-Classifier/notebook/CIFAR-10.ipynb) - Benchmark e Test<br>├── 📁 [output/](./02-CIFAR10-Classifier/output) - Log e storico predizioni<br>│   ├── 📁 [logs/](./02-CIFAR10-Classifier/output/logs) - CSV con storico predizioni<br>│   └── 📁 [predictions/](./02-CIFAR10-Classifier/output/predictions) - Metriche di run<br>├── 📁 [src/](./02-CIFAR10-Classifier/src) - Codice sorgente (Training & Inferenza)<br>│   ├── [config.py](./02-CIFAR10-Classifier/src/config.py) - File configurazione parametri<br>│   ├──  [train.py](./02-CIFAR10-Classifier/src/train.py) - Script di addestramento primario<br>│   ├──  [predict_plot.py](./02-CIFAR10-Classifier/src/predict_plot.py) - Inferenza visiva<br>│   └──  [predict_terminal.py](./02-CIFAR10-Classifier/src/predict_terminal.py) - Inferenza rapida<br>├── 📁 [test/](./02-CIFAR10-Classifier/test) - Immagini fotografiche per inferenza<br>└── 📄 [requirements.txt](./02-CIFAR10-Classifier/requirements.txt) - Dipendenze modulo<br>
-<br><br>
+> 📂 [**02-CIFAR10-Classifier/**]
+├── 📁 [data/](./02-CIFAR10-Classifier/data) - Dataset CIFAR-10 (Ignorato da Git)
+│   └── [.gitkeep](./02-CIFAR10-Classifier/data/.gitkeep)
+├── 📁 [models/](./02-CIFAR10-Classifier/models) - Modelli PyTorch salvati
+│   ├── [.gitkeep](./02-CIFAR10-Classifier/models/.gitkeep)
+│   └── [modello_cifar10.pt](./02-CIFAR10-Classifier/models/modello_cifar10.pt)
+├── 📁 [notebook/](./02-CIFAR10-Classifier/notebook) - Analisi e prototipazione
+│   └── 📓 [CIFAR-10.ipynb](./02-CIFAR10-Classifier/notebook/CIFAR-10.ipynb)
+├── 📁 [outputss/](./02-CIFAR10-Classifier/outputss) - Report e metriche
+│   ├── 📁 [logs/](./02-CIFAR10-Classifier/outputss/logs) - Storico predizioni in CSV/TXT
+│   ├── 📁 [predictions/](./02-CIFAR10-Classifier/outputss/predictions) - Dashboard e grafici XAI
+│   ├── [training_metrics.png](./02-CIFAR10-Classifier/outputss/training_metrics.png) - Curve di Loss/Accuracy
+│   └── [.gitkeep](./02-CIFAR10-Classifier/outputss/.gitkeep)
+├── 📁 [src/](./02-CIFAR10-Classifier/src) - Logica di addestramento e inferenza
+│   ├── ⚙️ [config.py](./02-CIFAR10-Classifier/src/config.py) - Configurazione iperparametri
+│   ├── [model.py](./02-CIFAR10-Classifier/src/model.py) - Architettura della CNN
+│   ├── [train.py](./02-CIFAR10-Classifier/src/train.py) - Training loop primario
+│   ├── [predict_plot.py](./02-CIFAR10-Classifier/src/predict_plot.py) - Inferenza visiva con Matplotlib
+│   └── [predict_terminal.py](./02-CIFAR10-Classifier/src/predict_terminal.py) - Inferenza leggera via terminale
+├── 📁 [test/](./02-CIFAR10-Classifier/test) - Immagini reali per validazione manuale
+│   └── 📁 [img/](./02-CIFAR10-Classifier/test/img) - Campioni (aereo, auto, gatto, ecc.)
+└── 📄 [requirements.txt](./02-CIFAR10-Classifier/requirements.txt) - Dipendenze specifiche modulo
 
 Sfida di riconoscimento su 10 classi (RGB 32x32), potenziata da tecniche di **Interpretability**.
 
@@ -216,8 +269,8 @@ Se vuoi saltare direttamente all'azione e testare le reti neurali già addestrat
 cd 01-MNIST-Digits
 #### Per l'interfaccia grafica con ragionamento
 python src/predict_mnist_heatmap.py
-# Per un output rapido direttamente sul terminale
-python src/predict_mnist_terminal.py
+# Mostra architettura del modello e analisi dei tensori
+python src/inspect_model.py
 ```
 
    > **Per testare CIFAR-10 (Oggetti e Animali):**
@@ -226,7 +279,7 @@ python src/predict_mnist_terminal.py
 cd 02-CIFAR10-Classifier
 # Per la GUI che mostra l'immagine, la top-3 delle classi e le heatmap
 python src/predict_plot.py
-# Per l'output su terminale con salvataggio log CSV
+# Per l'outputs su terminale con salvataggio log CSV
 python src/predict_terminal.py
 ```
 
@@ -234,12 +287,14 @@ python src/predict_terminal.py
 
 ## ***Feature in Sviluppo***
 
-- \[ \] **ResNet-50 Integration:** Implementazione di Skip-Connections per superare il limite delle 50 epoche di training senza degradazione.
+- [ ] **ResNet-50 Integration:** Implementazione di Skip-Connections per superare il limite delle 50 epoche di training senza degradazione.
 
-- \[ \] **Advanced Data Augmentation:** Introduzione di Color Jittering e Random Flipping per aumentare la robustezza dei modelli.
+- [ ] **Advanced Data Augmentation:** Introduzione di Color Jittering e Random Flipping per aumentare la robustezza dei modelli.
 
-- \[ \] **Real-time Camera Lab:** Overlay delle heatmap Grad-CAM in tempo reale direttamente via webcam.
+- [ ] **Real-time Camera Lab:** Overlay delle heatmap Grad-CAM in tempo reale direttamente via webcam.
 
 <p align="center">
-  <img src="https://img.shields.io/badge/%20Sviluppato%20con%20dedizione-Spiccillo-blueviolet?style=for-the-badge&logo=github" />
+  <a href="https://github.com/spiccillodev">
+    <img src="https://img.shields.io/badge/%20Sviluppato%20con%20dedizione-Spiccillo-blueviolet?style=for-the-badge&logo=github&logoColor=white" alt="Spiccillo Profile" />
+  </a>
 </p>
