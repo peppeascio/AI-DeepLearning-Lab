@@ -19,12 +19,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Definiamo le sottocartelle usando l'operatore "/" fornito da pathlib
 DATA_DIR = BASE_DIR / "data"
 MODELS_DIR = BASE_DIR / "models"
-OUTPUT_DIR = BASE_DIR / "output"
+OUTPUTS_DIR = BASE_DIR / "outputs"
 
 # Assicuriamoci che le cartelle esistano (le crea se mancano, ignorando se già ci sono)
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 MODELS_DIR.mkdir(parents=True, exist_ok=True)
-OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+OUTPUTS_DIR.mkdir(parents=True, exist_ok=True)
 
 
 # ==========================================
