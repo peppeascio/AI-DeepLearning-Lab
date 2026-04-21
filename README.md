@@ -11,6 +11,8 @@
     <img src="https://img.shields.io/badge/CUDA-RTX%203070-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
   </a>
  
+<p align="center"
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](./LICENSE)
   </a>
 </p>
@@ -35,6 +37,9 @@ Benvenuti nel mio laboratorio di ***Computer Vision***. Questo repository rappre
 
 >[!TIP]
    > I benchmark dettagliati e i test sono disponibili nei Jupyter Notebook all'interno di ogni modulo.
+
+  [![Jupyter Notebook](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](./01-MNIST-Digits/notebook/01_MNIST_Digits.ipynb)
+  [![TensorBoard](https://img.shields.io/badge/Monitored%20with-TensorBoard-green?style=for-the-badge&logo=tensorflow&logoColor=white)](./01-MNIST-Digits/notebook/01_MNIST_Digits.ipynb)
 
 > _Esempio:_  
 > ![Model](https://img.shields.io/badge/Model-CNN%20Deep%20Learning-purple)
@@ -282,6 +287,38 @@ python src/predict_plot.py
 # Per l'outputs su terminale con salvataggio log CSV
 python src/predict_terminal.py
 ```
+
+---
+
+### Performance & Visual Benchmarks
+#### [01-MNIST-Digits.ipynb](./01-MNIST-Digits/notebook/01_MNIST_Digits.ipynb)
+<p align="center">
+<img src="assets/img/benchmark/optimizer_comp.png" width="80%" alt="Optimizer Comparison">
+
+
+<sub><b>Confronto Ottimizzatori:</b> Analisi della velocità di convergenza tra Adam, SGD e RMSprop.</sub>
+</p>
+
+<p align="center">
+<img src="assets/img/benchmark/lr_impact.png" width="80%" alt="Learning Rate Impact">
+
+
+<sub><b>Impact Analysis:</b> Studio della stabilità del gradiente al variare del Learning Rate.</sub>
+</p>
+
+<p align="center">
+<img src="assets/img/benchmark/xai.png" width="80%" alt="Explainable AI">
+
+
+<sub><b>XAI & Activation Mapping:</b> Visualizzazione dei pattern rilevati dai filtri convoluzionali (Brain Scanning).</sub>
+</p>
+
+<p align="center">
+<img src="assets/img/benchmark/inferenza_custom.png" width="80%" alt="Custom Inference">
+
+
+<sub><b>Real-world Test:</b> Validazione del modello su cifre scritte a mano fuori dal dataset originale.</sub>
+</p>
 
 ---
 
